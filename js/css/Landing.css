@@ -9,6 +9,7 @@
   --white: #ffffff;
   --max-width: 1200px;
   --header-font: "Merriweather", serif;
+  --extra-light: #53dcc4;
 }
 
 * {
@@ -68,7 +69,7 @@ body {
 }
 
 .header {
-  background-image: url("../../images_portal/assets/wallhaven-57r8x5_1920x1080.png");
+  background-image: url("../../images_portal/assets/header.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,7 +85,31 @@ nav {
   gap: 2rem;
 }
 
-.nav__logo a {
+.nav__logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    position: relative;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    color: var(--white);
+    background-color: var(--secondary-color);
+}
+
+.nav__logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.Logo{
+    width: 80px;
+    height: 65px;
+
+}
+/* .nav__logo a {
   position: relative;
   padding: 2rem 1rem;
   font-size: 2rem;
@@ -92,7 +117,7 @@ nav {
   font-family: var(--header-font);
   color: var(--white);
   background-color: var(--secondary-color);
-}
+} */
 
 .nav__logo a::after {
   position: absolute;
@@ -263,6 +288,7 @@ nav {
 .services__card {
   padding: 2rem;
   border: 2px solid var(--extra-light);
+  border-radius: 15px;
 }
 
 .services__card img {
@@ -323,10 +349,19 @@ nav {
   gap: 2rem;
 }
 
+
 .projects__card img {
   margin-bottom: 1rem;
   border-radius: 5px;
 }
+
+.projects__card {
+    transition: transform 0.3s ease;
+}
+
+.projects__card:hover {
+    transform: translateX(-5px); /* Elevar el contenedor al pasar el mouse */
+  }
 
 .projects__card h4 {
   font-size: 1.2rem;
