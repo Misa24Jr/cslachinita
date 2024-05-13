@@ -1,7 +1,8 @@
 /*********************************  AMBIENTE 1 ***************************/
 .dialogsCss1{
     background-color: #FAFAFA;
-    border-radius: 10px;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
     box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
 }
 
@@ -14,19 +15,19 @@
     color:black;
     font-family: verdana;
     font-weight:bold;
-    font-size:15px;
+    font-size:20px;
 }
 
 .dialogsButtonCloseCss1:hover{
     cursor: pointer;
-    color:#3ec9a7;
+    color:red;
 }
 
 .dialogsTitleCss1{
     color:black;
     font-weight:bold;
     font-family:verdana;
-    font-size:13px;
+    font-size:18px;
     font-weight:bold;    
     cursor:move;
 }

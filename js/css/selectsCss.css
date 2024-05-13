@@ -6,8 +6,9 @@
     color:black;
     font-weight: bold;
     font-size: 12px;
-    height: 35px;
+    height: 45px;
     background-color: lightgray;
+    padding-left: 5px;
 }
 .selectsCss1 option {
     font-family: verdana; /*arial, helvetica, sans-serif;*/

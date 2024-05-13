@@ -114,26 +114,26 @@ var Modulo = {
 		dialogsModulo.show();
         dialogsModulo.setCenterScreen();
 		dialogsModulo.setEnableMinimize(false);
-		dialogsModulo.addObject(labelsOrg, 70, 70);
-		dialogsModulo.addObject(pcbOrg, 70, 90);
+		dialogsModulo.addObject(labelsOrg, 30, 90);
+		dialogsModulo.addObject(pcbOrg, 70, 130);
 		
-		dialogsModulo.addObject(labelsModulo, 70, 130);
-		dialogsModulo.addObject(pcbModulo, 70, 150);
-		dialogsModulo.addObject(imgButtonsModulo, 103, 220);
+		dialogsModulo.addObject(labelsModulo, 30, 190);
+		dialogsModulo.addObject(pcbModulo, 70, 230);
+		dialogsModulo.addObject(imgButtonsModulo, 100, 320);
 	},
 	
 	create: function() {
-        dialogsModulo = dialogs.create('dialogsModulo', 0, 0, 320, 240, 'MODULO');
+        dialogsModulo = dialogs.create('dialogsModulo', 0, 0, 320, 350, 'MODULO');
 		dialogsModulo.setIconDlg('images/logo/', 'EDUCA_logo.gif');
 		
 		
-		labelsOrg = labels.create('labelsOrg','Organizacin',1);
-		labelsOrg.setFont('arial black','12','Black');		
+		labelsOrg = labels.create('labelsOrg','Organizacion:',1);
+		labelsOrg.setFont('arial black','15','Black');		
 		
 		pcbOrg = selects.create('pcbOrg', 'pcbOrg', '', 0);
 		pcbOrg.setWidth(200);
-		labelsModulo = labels.create('labelsModulo','Modulo',1);
-		labelsModulo.setFont('arial black','12','Black');
+		labelsModulo = labels.create('labelsModulo','Modulo:',1);
+		labelsModulo.setFont('arial black','15','Black');
 		
 		pcbModulo = selects.create('pcbModulo', 'pcbModulo', '', 0);
 		pcbModulo.setWidth(200);
