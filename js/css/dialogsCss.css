@@ -1,18 +1,13 @@
 /*********************************  AMBIENTE 1 ***************************/
 .dialogsCss1{
-    background-color:rgba(235, 235, 235, 1);
-    border-width: 2px;
-    border-color: rgba(0,0,0,0.1);
-    border-style: solid;
-    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    background-color: #FAFAFA;
+    border-radius: 10px;
     box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .dialogsCss1:hover{
-    border-color: rgba(0,0,0,1);
-    background-color:rgba(255, 255, 255, 1);
-    border-color: #114d3f;
-    border-width: 2px;
+    border-color: #0d0c1d;
+    border-width: 5px;
 }
 
 .dialogsButtonCloseCss1{
@@ -43,7 +38,7 @@
 }
 
 /*********************************  AMBIENTE 2 ***************************/
-.dialogsCss2{
+/* .dialogsCss2{
     background-color:rgba(235, 235, 235, 1);
     border-width: 2px;
     border-color: rgba(0,0,0,0.2);
@@ -83,4 +78,4 @@
     font-family:verdana;
     font-size:11px;
     font-weight:bold;    
-}
+} */

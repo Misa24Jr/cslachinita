@@ -1,23 +1,18 @@
 /******************************************* AMBIENTE 1 *******************************************/
 .selectsCss1{
-    background-color : rgba(0,0,0,0);
-    border-color:rgba(100,100,100,0.7);
-    border-top:none;
-    border-left:none;
-    border-right:none;
-    border-width:1px;
-    border-radius: 0;
+    border-radius: 10px;
     outline:none;
+    border: none;
     color:black;
-    font-family: verdana;
     font-weight: bold;
     font-size: 12px;
+    height: 35px;
+    background-color: lightgray;
 }
-
 .selectsCss1 option {
     font-family: verdana; /*arial, helvetica, sans-serif;*/
-    font-size: 11px;
-    background-color: white;
+    font-size: 12px;
+    background-color: lightgray;
     color:black;
     font-weight: bold;
 }

@@ -114,12 +114,12 @@ var Modulo = {
 		dialogsModulo.show();
         dialogsModulo.setCenterScreen();
 		dialogsModulo.setEnableMinimize(false);
-		dialogsModulo.addObject(labelsOrg, 85, 70);
-		dialogsModulo.addObject(pcbOrg, 85, 90);
+		dialogsModulo.addObject(labelsOrg, 70, 70);
+		dialogsModulo.addObject(pcbOrg, 70, 90);
 		
-		dialogsModulo.addObject(labelsModulo, 85, 120);
-		dialogsModulo.addObject(pcbModulo, 85, 140);
-		dialogsModulo.addObject(imgButtonsModulo, 103, 200);
+		dialogsModulo.addObject(labelsModulo, 70, 130);
+		dialogsModulo.addObject(pcbModulo, 70, 150);
+		dialogsModulo.addObject(imgButtonsModulo, 103, 220);
 	},
 	
 	create: function() {
@@ -127,16 +127,16 @@ var Modulo = {
 		dialogsModulo.setIconDlg('images/logo/', 'EDUCA_logo.gif');
 		
 		
-		labelsOrg = labels.create('labelsOrg','Organización',1);
+		labelsOrg = labels.create('labelsOrg','Organizacin',1);
 		labelsOrg.setFont('arial black','12','Black');		
 		
 		pcbOrg = selects.create('pcbOrg', 'pcbOrg', '', 0);
-		pcbOrg.setWidth(170);
+		pcbOrg.setWidth(200);
 		labelsModulo = labels.create('labelsModulo','Modulo',1);
 		labelsModulo.setFont('arial black','12','Black');
 		
 		pcbModulo = selects.create('pcbModulo', 'pcbModulo', '', 0);
-		pcbModulo.setWidth(170);
+		pcbModulo.setWidth(200);
 		imgButtonsModulo = imgButtons.create('imgButtonsModulo', 'ENTRAR', '11curve_1.png');
 		imgButtonsModulo.setDimension(130, 35);
 	},
