@@ -71,7 +71,7 @@ var modFchAlu = new ModeloFichaAlumno();
 var SubMenuAdmision = {	
 	idPanelMenu : 1,
 	level : 1,
-    captions : ['Persona','Relación Estudiante Representante','Ingreso de Estudiante','Institución de Procedencia','Profesión','Periodo','Inscripción'],
+    captions : ['Persona','Relaciï¿½n Estudiante Representante','Ingreso de Estudiante','Instituciï¿½n de Procedencia','Profesiï¿½n','Periodo','Inscripciï¿½n'],
     functs : ['exeShow("js/edu/adm/","MantPersona")','exeShow("js/edu/cnt/","MantPerAutorizada")','exeShow("js/edu/cnt/","IngresoAlumno")','exeShow("js/edu/cnt/","MantInsProcedencia")','exeShow("js/edu/adm/","MantProfesion")','exeShow("js/edu/pla/man/","MantPeriodo")','exeShow("js/edu/ins/","InscAlumnos")'],
     subMenues : [0,0,0,0,0,0,0,0,0],
     icons : ['images/persona_1.png','images/per_autorizada.png','images/ingresoalumno_1.png','images/tipoinstitucion_1.png','images/profesion_1.png','images/periodo_1.png','images/inscripcion_1.png'], 
@@ -99,7 +99,7 @@ var Admision = {
 	},
 	
 	createMWs: function() {
-		mwAdmision = desktop.addMinWindow('Admisión', this.windowName + '.show()', this.windowName + '.hide()', this.windowName + '.hide()');
+		mwAdmision = desktop.addMinWindow('Admisiï¿½n', this.windowName + '.show()', this.windowName + '.hide()', this.windowName + '.hide()');
 		dialogsAdmision.setMinWindowEvent('mw' + this.windowName + '.hide()','mw' + this.windowName + '.disable()','mw' + this.windowName + '.show()');
 	},
 	
@@ -175,7 +175,7 @@ var Admision = {
 	},
 
   	create: function() {
-  		dialogsAdmision = dialogs.create('dialogsAdmision',0,0,854,552,'ADMISIÓN');
+		dialogsAdmision = dialogsAdmi.create('dialogsAdmision',0,0,854,552,'ADMISIï¿½N');
 		dialogsAdmision.setAdjY(60);
 		calendarAdmisionFechaNac = calendars.create("calendarAdmisionFechaNac");
         calendarAdmisionFechaNac.setValidEmpty();
@@ -199,25 +199,25 @@ var Admision = {
         editsAdmisionApellido.setSizeEdit(136);
         editsAdmisionApellido.setMaxLength(50);
         
-        editsAdmisionEmergencia = edits.create('editsAdmisionEmergencia','editsAdmisionEmergencia','N° Historia :',1,86,'normal');
+        editsAdmisionEmergencia = edits.create('editsAdmisionEmergencia','editsAdmisionEmergencia','Nï¿½ Historia :',1,86,'normal');
         editsAdmisionEmergencia.setValidEmpty();
         editsAdmisionEmergencia.setSizeEdit(136);
         editsAdmisionEmergencia.setMaxLength(150);
         
-        pbcAdmisionRaza = powerComboBox.create('pbcAdmisionRaza','pbcAdmisionRaza','Indígena :',1,82);
+        pbcAdmisionRaza = powerComboBox.create('pbcAdmisionRaza','pbcAdmisionRaza','Indï¿½gena :',1,82);
 		pbcAdmisionRaza.enableReadOnlyEditor();
         pbcAdmisionRaza.addEmptyOption();
         pbcAdmisionRaza.setValidEmpty();
         pbcAdmisionRaza.setDataType('string');
 		pbcAdmisionRaza.addOptionAndSimpleValue(null, 'NO', 'NO');
-        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Wayúu', 'Wayúu');
-        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Añu', 'Añu');
+        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Wayï¿½u', 'Wayï¿½u');
+        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Aï¿½u', 'Aï¿½u');
         pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Yukpa', 'Yukpa');
         pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Japreria', 'Japreria');
-        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Barí', 'Barí');
+        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Barï¿½', 'Barï¿½');
         pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Piapoko', 'Piapoko');
-        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Pemón', 'Pemón');
-        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Kariña', 'Kariña');
+        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Pemï¿½n', 'Pemï¿½n');
+        pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Kariï¿½a', 'Kariï¿½a');
 		pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Panare', 'Panare');
         pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Chaima', 'Chaima');
         pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Maquiritare', 'Maquiritare');
@@ -228,7 +228,7 @@ var Admision = {
         pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Yanomami', 'Yanomami');
 		pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Wanikua', 'Wanikua');
         pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Waraos', 'Waraos');
-		pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Waikerí', 'Waikerí');
+		pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Waikerï¿½', 'Waikerï¿½');
 		pbcAdmisionRaza.addOptionAndSimpleValue(null, 'Wottuja-Piaroa', 'Wottuja-Piaroa');
         
         pbcAdmisionSexo = powerComboBox.create('pbcAdmisionSexo','pbcAdmisionSexo','Sexo :',1,78);
@@ -238,12 +238,12 @@ var Admision = {
         pbcAdmisionSexo.setValidEmpty();
         pbcAdmisionSexo.addOptionAndSimpleValue(null, 'Femenino', 'Femenino');
         pbcAdmisionSexo.addOptionAndSimpleValue(null, 'Masculino', 'Masculino');
-        pbcAdmisionPais = powerComboBox.create('pbcAdmisionPais','pbcAdmisionPais','País :',1,82);
+        pbcAdmisionPais = powerComboBox.create('pbcAdmisionPais','pbcAdmisionPais','Paï¿½s :',1,82);
         pbcAdmisionPais.enableReadOnlyEditor();
         pbcAdmisionPais.addEmptyOption();
         pbcAdmisionPais.setValidEmpty();
         pbcAdmisionPais.enableOnChangeToEmptyOption();
-        pbcAdmisionRegion = powerComboBox.create('pbcAdmisionRegion','pbcAdmisionRegion','Región :',1,79);
+        pbcAdmisionRegion = powerComboBox.create('pbcAdmisionRegion','pbcAdmisionRegion','Regiï¿½n :',1,79);
         pbcAdmisionRegion.enableReadOnlyEditor();
         pbcAdmisionRegion.addEmptyOption();
         pbcAdmisionRegion.setValidEmpty();
@@ -271,7 +271,7 @@ var Admision = {
         pcbAdmisionCarrera.addEmptyOption();
         pcbAdmisionCarrera.setValidEmpty();
         pcbAdmisionCarrera.enableOnChangeToEmptyOption();
-        pbcAdmisionPosicion = powerComboBox.create('pbcAdmisionPosicion','pbcAdmisionPosicion','Posición :',1,79);                
+        pbcAdmisionPosicion = powerComboBox.create('pbcAdmisionPosicion','pbcAdmisionPosicion','Posiciï¿½n :',1,79);                
         pbcAdmisionPosicion.enableReadOnlyEditor();
         pbcAdmisionPosicion.addEmptyOption();
         pbcAdmisionPosicion.setValidEmpty();
@@ -292,7 +292,7 @@ var Admision = {
 		editsAdmisionApellidoMadre.setSizeEdit(149);
 		editsAdmisionApellidoMadre.setFieldFind(true);
 		editsAdmisionApellidoMadre.setMaxLength(50);
-		pbcAdmisionProfesionMadre = powerComboBox.create('pbcAdmisionProfesionMadre','pbcAdmisionProfesionMadre','Profesión :',1,82);
+		pbcAdmisionProfesionMadre = powerComboBox.create('pbcAdmisionProfesionMadre','pbcAdmisionProfesionMadre','Profesiï¿½n :',1,82);
 		pbcAdmisionProfesionMadre.setWidthCombo(370);
 		pbcAdmisionProfesionMadre.enableReadOnlyEditor();
 		pbcAdmisionProfesionMadre.addEmptyOption();
@@ -316,7 +316,7 @@ var Admision = {
 		editsAdmisionApellidoPadre.setSizeEdit(149);
 		editsAdmisionApellidoPadre.setFieldFind(true);
 		editsAdmisionApellidoPadre.setMaxLength(50);
-		pbcAdmisionProfesionPadre = powerComboBox.create('pbcAdmisionProfesionPadre','pbcAdmisionProfesionPadre','Profesión :',1,82);
+		pbcAdmisionProfesionPadre = powerComboBox.create('pbcAdmisionProfesionPadre','pbcAdmisionProfesionPadre','Profesiï¿½n :',1,82);
 		pbcAdmisionProfesionPadre.setWidthCombo(370);
 		pbcAdmisionProfesionPadre.enableReadOnlyEditor();
 		pbcAdmisionProfesionPadre.addEmptyOption();
@@ -332,7 +332,7 @@ var Admision = {
   		pbcAdmisionParentescoRepre.enableReadOnlyEditor();
   		pbcAdmisionParentescoRepre.addEmptyOption();
   		pbcAdmisionParentescoRepre.setValidEmpty();
-  		pbcAdmisionProfesionRepre = powerComboBox.create('pbcAdmisionProfesionRepre','pbcAdmisionProfesionRepre','Profesión :',1,79);
+  		pbcAdmisionProfesionRepre = powerComboBox.create('pbcAdmisionProfesionRepre','pbcAdmisionProfesionRepre','Profesiï¿½n :',1,79);
   		pbcAdmisionProfesionRepre.enableReadOnlyEditor();
   		pbcAdmisionProfesionRepre.addEmptyOption();
   		pbcAdmisionProfesionRepre.setValidEmpty();
@@ -366,10 +366,10 @@ var Admision = {
 		editsAdmisionEmailRepre	= edits.create('editsAdmisionEmailRepre','editsAdmisionEmailRepre','Email :',1,78,'normal');
 		editsAdmisionEmailRepre.setSizeEdit(149);
 		editsAdmisionEmailRepre.setMaxLength(50); 
-		editsAdmisionRepreDireccion	= edits.create('editsAdmisionRepreDireccion','editsAdmisionRepreDireccion','Dirección :',1,82,'normal');
+		editsAdmisionRepreDireccion	= edits.create('editsAdmisionRepreDireccion','editsAdmisionRepreDireccion','Direcciï¿½n :',1,82,'normal');
 		editsAdmisionRepreDireccion.setSizeEdit(632);
 		editsAdmisionRepreDireccion.setMaxLength(150);
-		editsAdmisionRepreObserv = edits.create('editsAdmisionRepreObserv','editsAdmisionRepreObserv','Observación :',1,82,'normal');
+		editsAdmisionRepreObserv = edits.create('editsAdmisionRepreObserv','editsAdmisionRepreObserv','Observaciï¿½n :',1,82,'normal');
 		editsAdmisionRepreObserv.setSizeEdit(632);
 		editsAdmisionRepreObserv.setMaxLength(100);
 		imagesAdmisionRepre = images.create('imagesAdmisionRepre','imagesAdmisionRepre','images/pht/anonymous.png');		

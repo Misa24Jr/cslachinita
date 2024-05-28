@@ -31,7 +31,7 @@
       <div class="section__container header__container">
         <div class="header__content">
           <h1>
-            Brindamos Salud a la Vida Congregacion de las Hermanas de la Caridad
+            Brindamos Salud a la Vida Congregación de las Hermanas de la Caridad
             de Santa Ana
           </h1>
           <button class="btn">SIGUENOS!</button>
@@ -41,7 +41,7 @@
           <img
             id="carouselImage"
             class="fadeInDown"
-            src="./images_portal/assets/index-1.png"
+            src="./images/slider/imagen_1.jpg"
             alt="header profile"
           />
         </div>
@@ -341,8 +341,18 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const images = [
-          "./images_portal/assets/index-1.png",
-          "./images_portal/assets/index-2.png",
+          "./images/slider/imagen_1.jpg",
+          "./images/slider/imagen_2.jpg",
+          "./images/slider/imagen_3.jpg",
+          "./images/slider/imagen_4.jpg",
+          "./images/slider/imagen_5.jpg",
+          "./images/slider/imagen_6.jpg",
+          "./images/slider/imagen_7.jpg",
+          "./images/slider/imagen_8.jpg",
+          "./images/slider/imagen_9.jpg",
+          "./images/slider/imagen_10.jpg",
+          "./images/slider/imagen_11.jpg",
+          "./images/slider/imagen_12.jpg"
         ];
         const intervalTime = 5000;
 
@@ -361,17 +371,26 @@
       });
 
       document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav__links");
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav__links');
 
-        menuToggle.addEventListener("click", function () {
-          navLinks.classList.toggle("active");
-          menuToggle.querySelector("i").classList.toggle("ri-menu-line");
-          menuToggle.querySelector("i").classList.toggle("ri-close-line");
+      menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+        menuToggle.querySelector('i').classList.toggle('ri-menu-line');
+        menuToggle.querySelector('i').classList.toggle('ri-close-line');
+      });
+
+      // Select all links within the navigation
+      const navLinkItems = document.querySelectorAll('.nav__links a');
+
+      navLinkItems.forEach(link => {
+        link.addEventListener('click', function () {
+          navLinks.classList.remove('active');
+          menuToggle.querySelector('i').classList.remove('ri-close-line');
+          menuToggle.querySelector('i').classList.add('ri-menu-line');
         });
       });
+    });
     </script>
-
-    <script></script>
   </body>
 </html>

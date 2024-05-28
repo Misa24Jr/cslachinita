@@ -52,7 +52,7 @@ var MenuDlgPersona = {
 var SubMenuPersona = {	
 		idPanelMenu : 1,
 		level : 1,
-		captions : ['Paciente / Representante','Ubicación Geografica','Admision','Ficha del Paciente','Profesión','Tipo de Persona'],
+		captions : ['Paciente / Representante','Ubicaciï¿½n Geografica','Admision','Ficha del Paciente','Profesiï¿½n','Tipo de Persona'],
 		functs : ['exeShow("js/edu/cnt/","MantPerAutorizada")','','exeShow("js/edu/cnt/","Admision")','exeShow("js/edu/cnt/rpt/","RepoFichAlumno")','exeShow("js/edu/adm/","MantProfesion")','exeShow("js/edu/adm/","MantTipPersona")'],
 		subMenues : [0,2,0,0,0,0],
 		icons : ['images/per_autorizada.png','images/ubicacionGeografica_1.png','images/ingresoalumno_1.png','images/reporteevaluaciones_1.png','images/profesion_1.png','images/tipopersona_1.png'], 
@@ -64,7 +64,7 @@ var SubMenuPersona = {
 var SubMenuUbiGeo = {	
 		idPanelMenu : 2,
 		level : 2,
-		captions : ['País','Región','Ciudad','Asociar Ubicación'],
+		captions : ['Paï¿½s','Regiï¿½n','Ciudad','Asociar Ubicaciï¿½n'],
 		functs : ['exeShow("js/edu/pla/man/","MantPais")','exeShow("js/edu/pla/man/","MantRegion")','exeShow("js/edu/pla/man/","MantCiudad")','exeShow("js/edu/pla/man/","MantAsoUbicacion")'],
 		subMenues : [0,0,0,0],
 		icons : ['images/pais_1.png','images/region_1.png','images/ciudad_1.png','images/asociarUbicacion_1.png'], 
@@ -135,26 +135,33 @@ var MantPersona = {
         powerComboBoxMantPerGruSanguineo.addOptionAndSimpleValue(null, 'O-', 'O-');
         powerComboBoxMantPerGruSanguineo.addOptionAndSimpleValue(null, 'AB+', 'AB+');
         powerComboBoxMantPerGruSanguineo.addOptionAndSimpleValue(null, 'AB-', 'AB-');
+
         powerComboBoxMantPerStatus.enableReadOnlyEditor();
         powerComboBoxMantPerStatus.addEmptyOption();
         powerComboBoxMantPerStatus.setValidEmpty();
         powerComboBoxMantPerStatus.setFieldFind(true);
+
         powerComboBoxMantPerPais.enableReadOnlyEditor();
         powerComboBoxMantPerPais.addEmptyOption();
         powerComboBoxMantPerPais.setValidEmpty();
+
         powerComboBoxMantPerRegion.enableReadOnlyEditor();
         powerComboBoxMantPerRegion.addEmptyOption();
         powerComboBoxMantPerRegion.setValidEmpty();
+
         powerComboBoxMantPerCiudad.enableReadOnlyEditor();
         powerComboBoxMantPerCiudad.addEmptyOption();
         powerComboBoxMantPerCiudad.setValidEmpty();
+
 		powerComboBoxMantPerTipPersona.enableReadOnlyEditor();
         powerComboBoxMantPerTipPersona.addEmptyOption();
         powerComboBoxMantPerTipPersona.setValidEmpty();
         powerComboBoxMantPerTipPersona.setFieldFind(true);
         powerComboBoxMantPerTipPersona.setDataType('string');
+
         pcMantPerMunicipio.addEmptyOption();
         pcMantPerMunicipio.setValidEmpty();
+		
         pcMantPerParroquia.addEmptyOption();
         pcMantPerParroquia.setValidEmpty();
     },
@@ -224,14 +231,14 @@ var MantPersona = {
         	powerComboBoxMantPerIndigena.setValidEmpty();
         	powerComboBoxMantPerIndigena.setDataType('string');
 			powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'NO', 'NO');
-        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Wayúu', 'Wayúu');
-        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Añu', 'Añu');
+        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Wayï¿½u', 'Wayï¿½u');
+        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Aï¿½u', 'Aï¿½u');
         	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Yukpa', 'Yukpa');
         	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Japreria', 'Japreria');
-        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Barí', 'Barí');
+        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Barï¿½', 'Barï¿½');
         	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Piapoko', 'Piapoko');
-        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Pemón', 'Pemón');
-        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Kariña', 'Kariña');
+        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Pemï¿½n', 'Pemï¿½n');
+        	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Kariï¿½a', 'Kariï¿½a');
 			powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Panare', 'Panare');
          powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Chaima', 'Chaima');
          powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Maquiritare', 'Maquiritare');
@@ -242,7 +249,7 @@ var MantPersona = {
 	      powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Yanomami', 'Yanomami');
 			powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Wanikua', 'Wanikua');
         	powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Waraos', 'Waraos');
-			powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Waikerí', 'Waikerí');
+			powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Waikerï¿½', 'Waikerï¿½');
 			powerComboBoxMantPerIndigena.addOptionAndSimpleValue(null, 'Wottuja-Piaroa', 'Wottuja-Piaroa');
 			
 			//INSERCION DE OBJETOS
@@ -288,7 +295,7 @@ var MantPersona = {
     
     gridsMantPersona_Init: function() {
         gridsMantPersona.setFixColRow(false, true);
-        gridsMantPersona.addTitleVectorX(['C.i.', 'Nombre', 'Apellido', 'Id.', 'Tlf. Habitación', 'Nacionalidad', 'E. Civil', 'Email-1', 'indigena', 'Grupo Sanguineo', 'Estado', 'Sexo', 'Tlf. Celular', 'País', 'F.Nacimiento', 'Region', 'Ciudad', 'Profesión', 'Rif', 'Dirección', 'C. Emergencia', 'passport', 'mcpio', 'parroq']);
+        gridsMantPersona.addTitleVectorX(['C.i.', 'Nombre', 'Apellido', 'Id.', 'Tlf. Habitaciï¿½n', 'Nacionalidad', 'E. Civil', 'Email-1', 'indigena', 'Grupo Sanguineo', 'Estado', 'Sexo', 'Tlf. Celular', 'Paï¿½s', 'F.Nacimiento', 'Region', 'Ciudad', 'Profesiï¿½n', 'Rif', 'Direcciï¿½n', 'C. Emergencia', 'passport', 'mcpio', 'parroq']);
         gridsMantPersona.showData();
         gridsMantPersona.setSizeCol(1, 100);
         gridsMantPersona.setSizeCol(2, 130);
@@ -340,7 +347,7 @@ var MantPersona = {
 		  hint.setObjAttrib(attrib,ambiente);
 
         //DIALOGO
-        dialogsMantPersona = dialogs.create('dialogsMantPersona', 0, 0, 919, 482, 'MANTENIMIENTO DE PERSONA');
+        dialogsMantPersona = dialogs.create('dialogsMantPersona', 0, 0, 919, 500, 'MANTENIMIENTO DE PERSONA');
 		dialogsMantPersona.setAdjY(40);
         //EDITORES
         editsMantApellido = edits.create('editsMantApellido', 'editsMantApellido', 'Apellido (*):', 1,80,'normal');
@@ -352,8 +359,8 @@ var MantPersona = {
 		editsMantPerRif = edits.create('editsMantPerRif', 'editsMantPerRif', 'Rif.:', 1,70, 'normal');        
         editsMantTelCelular = edits.create('editsMantTelCelular', 'editsMantTelCelular', 'Tlf. Celular (*):', 1,85, 'mormal');
         editsMantTelCelular.setFieldFind(true);
-        editsMantPerDireccion = edits.create('editsMantPerDireccion', 'editsMantPerDireccion', 'Dirección:', 1,80, 'normal');
-        editsMantPerConEmergencia = edits.create('editsMantPerConEmergencia', 'editsMantPerConEmergencia', 'N° Historia:', 1,80, 'normal');
+        editsMantPerDireccion = edits.create('editsMantPerDireccion', 'editsMantPerDireccion', 'Direcciï¿½n:', 1,80, 'normal');
+        editsMantPerConEmergencia = edits.create('editsMantPerConEmergencia', 'editsMantPerConEmergencia', 'Nï¿½ Historia:', 1,80, 'normal');
         //POWERCOMBO      
         powerComboBoxMantNacionalidad = powerComboBox.create('powerComboBoxMantNacionalidad', 'powerComboBoxMantNacionalidad', 'Nacionalidad:', 1,85);
         powerComboBoxMantPerEstCivil = powerComboBox.create('powerComboBoxMantPerEstCivil', 'powerComboBoxMantPerEstCivil', 'Estado Civil:', 1,80);
@@ -361,9 +368,9 @@ var MantPersona = {
         powerComboBoxMantPerGruSanguineo = powerComboBox.create('powerComboBoxMantPerGruSanguineo', 'powerComboBoxMantPerGruSanguineo', 'G. Sanguineo:', 1,85);
         powerComboBoxMantPerStatus = powerComboBox.create('powerComboBoxMantPerStatus', 'powerComboBoxMantPerStatus', 'Estado (*):', 1,80);
         powerComboBoxMantPerPais = powerComboBox.create('powerComboBoxMantPerPais', 'powerComboBoxMantPerPais', 'Pais (+):', 1,85);
-        powerComboBoxMantPerRegion = powerComboBox.create('powerComboBoxMantPerRegion', 'powerComboBoxMantPerRegion', 'Región (^):', 1,80);
+        powerComboBoxMantPerRegion = powerComboBox.create('powerComboBoxMantPerRegion', 'powerComboBoxMantPerRegion', 'Regiï¿½n (^):', 1,80);
         powerComboBoxMantPerCiudad = powerComboBox.create('powerComboBoxMantPerCiudad', 'powerComboBoxMantPerCiudad', 'Ciudad:', 1,70);
-        powerComboBoxMantPerProfesion = powerComboBox.create('powerComboBoxMantPerProfesion', 'powerComboBoxMantPerProfesion', 'Profesión:', 1,70);
+        powerComboBoxMantPerProfesion = powerComboBox.create('powerComboBoxMantPerProfesion', 'powerComboBoxMantPerProfesion', 'Profesiï¿½n:', 1,70);
 		powerComboBoxMantPerIndigena = powerComboBox.create('powerComboBoxMantPerIndigena', 'powerComboBoxMantPerIndigena', 'Indigena:', 1,85); 
 		powerComboBoxMantPerTipPersona = powerComboBox.create('powerComboBoxMantPerTipPersona', 'powerComboBoxMantPerTipPersona', 'Tipo P. (*):', 1,70);
 		powerComboBoxMantPerTipPersona.setTypeObjOpt('input', 'checkbox');
@@ -392,9 +399,9 @@ var MantPersona = {
 		  hint.addToHintWithRefreshPos(powerComboBoxMantPerTipPersona,dialogsMantPersona,"Elija el Tipo de Persona",23,69,true);
 		  hint.addToHintWithRefreshPos(powerComboBoxMantPerGruSanguineo,dialogsMantPersona,"Elija el Grupo Sanguineo",264,118,true);
 		  //hint.addToHintWithRefreshPos(editsMantPerConEmergencia,dialogsMantPersona,"Escriba el Contacto de Emergencia",562,164,true);
-		  //hint.addToHintWithRefreshPos(editsMantPerTelHabitacion,dialogsMantPersona,"Escriba el Telefono de Habitación",69,188,true);
+		  //hint.addToHintWithRefreshPos(editsMantPerTelHabitacion,dialogsMantPersona,"Escriba el Telefono de Habitaciï¿½n",69,188,true);
 		  //hint.addToHintWithRefreshPos(editsMantTelCelular,dialogsMantPersona,"Escriba el Telefono Celular",309,188,true);
-		  //hint.addToHintWithRefreshPos(editsMantPerRif,dialogsMantPersona,"Escriba el Registro de Información Fiscal (Rif)",41,117,true);
+		  //hint.addToHintWithRefreshPos(editsMantPerRif,dialogsMantPersona,"Escriba el Registro de Informaciï¿½n Fiscal (Rif)",41,117,true);
 		  hint.addToHintWithRefreshPos(calendarsMantPersona,dialogsMantPersona,"Elija la Fecha de Nacimiento",518,92,true);
     },
     
@@ -631,8 +638,8 @@ var MantPersona = {
 
 	reporte : function() {
 		///////////////////////////////////////ARREGLO DE DESCRIPCION Y DATA//////////////////////////////////////////////////////////////////////////////
-		var aData = [['C.I.','Nombre','Apellido','Tipo de Persona','Nacionalidad','Estado Civil','Profesión','Sexo','Fecha de Nacimiento','Rif','Grupo Sanguineo',
-					  'Estado','Pais','Región','Ciudad','Email','Indigena','N° Historia','Telefono de Habitación','Telefono Movil','Dirección'],  	
+		var aData = [['C.I.','Nombre','Apellido','Tipo de Persona','Nacionalidad','Estado Civil','Profesiï¿½n','Sexo','Fecha de Nacimiento','Rif','Grupo Sanguineo',
+					  'Estado','Pais','Regiï¿½n','Ciudad','Email','Indigena','Nï¿½ Historia','Telefono de Habitaciï¿½n','Telefono Movil','Direcciï¿½n'],  	
 		
 					 [editsMantCedIdentidad.getValue(),editsMantNombre.getValue(),editsMantApellido.getValue(),powerComboBoxMantPerTipPersona.getValue(),
 					  powerComboBoxMantNacionalidad.getValue(),powerComboBoxMantPerEstCivil.getValue(),powerComboBoxMantPerProfesion.getValue(),
@@ -699,7 +706,7 @@ var MantPersona = {
 		//************************ TABLE ***************************
 		rep.setTableRowProperties(20, 180, 180, 180, 'helvetica', 0, 0, 0, 10, 'rgba(180,180,180,0.4)', 'rgba(180,180,180,0.4)', 2);
 		rep.setTableCellProperties(1, 'helvetica', 8);
-		rep.addTable('TablaRepoHojaEvaAlumno',['Nº','C.i.','Nombre y Apellido','Profesión','Telefono','Email','Dirección'],562,40);
+		rep.addTable('TablaRepoHojaEvaAlumno',['Nï¿½','C.i.','Nombre y Apellido','Profesiï¿½n','Telefono','Email','Direcciï¿½n'],562,40);
         rep.setTotalRowTable(34);
         rep.setHeightRow(20); 
         rep.setSizeColumnArray([28,90,220,180,130,210,280]);

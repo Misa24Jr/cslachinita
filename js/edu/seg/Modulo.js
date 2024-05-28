@@ -24,6 +24,7 @@ include('js/com/selects');
 include('js/com/attrib');
 include('js/com/wait');
 include('js/com/dialogs');
+include('js/com/dialogsLogin');
 include('js/com/labels');
 include('js/com/xmlStructs');
 include('js/com/xmlHttpReq');
@@ -88,6 +89,7 @@ include('js/edu/cnt/rpt/MappingDefLap');
 include('js/edu/cnt/rpt/VistaPreviaConstancia');
 
 
+
 var dialogsModulo      = new Object();
 var labelsOrganizacion = new Object();
 var pcbOrg             = new Object();
@@ -101,7 +103,7 @@ var Modulo = {
 	isImport : false,
 	
 	show : function(){
-		dialogs.closeAll();
+		dialogsLogin.closeAll();
 		if (!this.isCreate)	{
 			this.init();
 			this.isCreate = true;
@@ -123,7 +125,7 @@ var Modulo = {
 	},
 	
 	create: function() {
-        dialogsModulo = dialogs.create('dialogsModulo', 0, 0, 320, 350, 'MODULO');
+        dialogsModulo = dialogsLogin.create('dialogsModulo', 0, 0, 320, 350, 'MODULO');
 		dialogsModulo.setIconDlg('images/logo/', 'EDUCA_logo.gif');
 		
 		

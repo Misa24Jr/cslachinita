@@ -35,18 +35,13 @@
 }
 
 .powerComboBoxEditorCss1{
-    background-color : rgba(0,0,0,0);
-    border-color:rgba(100,100,100,0.7);
-    border-top:none;
-    border-left:none;
-    border-right:none;
+    background-color : lightgray;
     border-width:1px;
-    border-radius: 0;
+    border-radius: 5px;
+    border: none;
     outline:none;
-    font-family: verdana;
-    font-size: 12px;
-    font-weight: bold;
-    color: black;
+    font-weight:bold;
+    font-size:13px;
 }
 
 .powerComboBoxCaptionCss1{
